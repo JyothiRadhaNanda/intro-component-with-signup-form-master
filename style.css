@@ -28,6 +28,7 @@ body img {
   background-color: rgba(102, 51, 153, 0);
   width: 95%;
   align-content: center;
+  text-align: center;
 }
 #container #section1 h1 {
   font-size: 50px;
@@ -98,9 +99,10 @@ body img {
   #container {
     flex-direction: row;
   }
-  #section1 {
+  #container #section1 {
     padding-inline: 50px;
     width: 80%;
+    text-align: justify;
   }
   #section2 {
     width: 80%;
@@ -116,6 +118,7 @@ body img {
   #section1 {
     padding-inline: 50px;
     width: 80%;
+    text-align: left;
   }
   #section2 {
     width: 80%;

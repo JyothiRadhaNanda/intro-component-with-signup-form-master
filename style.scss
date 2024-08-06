@@ -38,6 +38,7 @@ body {
     background-color: rgba(102, 51, 153, 0);
     width: 95%;
     align-content: center;
+    text-align: center;
   }
   #section2 {
     // width: 100%;
@@ -104,10 +105,11 @@ body {
 @media screen and (min-width: 700px) {
   #container {
     flex-direction: row;
-  }
-  #section1 {
-    padding-inline: 50px;
-    width: 80%;
+    #section1 {
+      padding-inline: 50px;
+      width: 80%;
+      text-align: justify;
+    }
   }
   #section2 {
     width: 80%;
@@ -125,6 +127,7 @@ body {
   #section1 {
     padding-inline: 50px;
     width: 80%;
+    text-align: left;
   }
   #section2 {
     width: 80%;
