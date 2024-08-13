@@ -85,8 +85,9 @@ body img {
   right: 4%;
 }
 #container #section2 #form form input {
-  width: 100%;
+  width: 92%;
   background-color: white;
+  padding-left: 20px;
   height: 60px;
   border-radius: 8px;
   border-color: rgb(179, 179, 179);
