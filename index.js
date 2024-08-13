@@ -27,6 +27,10 @@ function validation() {
     imgfnAlert.classList.remove("hidden");
   } else if (symbols.test(firstName.value)) {
     fnAlert.innerHTML = "do not use specials characters!";
+    imgfnAlert.classList.remove("hidden");
+  } else if (firstName.value.length < 3) {
+    fnAlert.innerHTML = "First Name to short!";
+    imgfnAlert.classList.remove("hidden");
   } else if (string.includes(firstName.value.toLowerCase())) {
     fnAlert.innerHTML = `${firstName.value} is not avalable`;
   } else {
@@ -40,8 +44,12 @@ function validation() {
     imglnAlert.classList.remove("hidden");
   } else if (symbols.test(lastName.value)) {
     lnAlert.innerHTML = "do not use specials characters!";
+    imglnAlert.classList.remove("hidden");
   } else if (string.includes(lastName.value.toLowerCase())) {
     lnAlert.innerHTML = `${lastName.value} is not avalable`;
+  } else if (lastName.value.length < 3) {
+    lnAlert.innerHTML = "Last Name to short!";
+    imglnAlert.classList.remove("hidden");
   } else {
     lnAlert.classList.add("success");
     lnAlert.innerHTML = "success";
@@ -66,6 +74,12 @@ function validation() {
 
   if (password.value.trim() === "") {
     passwordAlert.innerHTML = "password must be fill!";
+    imgPasswordAlert.classList.remove("hidden");
+  } else if (password.value.length < 6) {
+    passwordAlert.innerHTML = "Password to short!";
+    imgPasswordAlert.classList.remove("hidden");
+  } else if (!symbolsEmail.test(password.value)) {
+    passwordAlert.innerHTML = "password must have atleast 1 symbols";
     imgPasswordAlert.classList.remove("hidden");
   } else {
     passwordAlert.innerHTML = "success";
