@@ -57,6 +57,7 @@ function validation() {
     symbolsEmail.test(email.value)
   ) {
     emailAlert.innerHTML = "Looks like this not an email";
+    imgEmailAlert.classList.remove("hidden");
   } else {
     emailAlert.innerHTML = "success";
     emailAlert.classList.add("hidden");
