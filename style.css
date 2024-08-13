@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  background-color: palevioletred;
   padding: 2px;
   align-content: center;
   background-size: cover;
@@ -12,6 +11,7 @@ body {
   max-height: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  background-color: palevioletred;
 }
 body img {
   background-size: cover;
@@ -25,7 +25,7 @@ body img {
 }
 #container #section1 {
   color: white;
-  background-color: rgba(102, 51, 153, 0);
+  background-color: transparent;
   width: 95%;
   align-content: center;
   text-align: center;
@@ -35,7 +35,6 @@ body img {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: rgba(255, 0, 0, 0);
 }
 #container #section2 {
   text-align: center;
@@ -64,15 +63,31 @@ body img {
   padding: 25px;
   border-radius: 10px;
   background-color: white;
+  text-align: right;
+}
+#container #section2 #form form span {
+  background-color: inherit;
+  color: red;
+}
+#container #section2 #form form .success {
+  display: none;
 }
 #container #section2 #form form label {
   background-color: white;
 }
-#container #section2 #form form input {
-  width: 96%;
-  background-color: white;
+#container #section2 #form form .bagus {
+  position: relative;
   margin-bottom: 20px;
-  height: 50px;
+}
+#container #section2 #form form .bagus img {
+  position: absolute;
+  top: 17px;
+  right: 4%;
+}
+#container #section2 #form form input {
+  width: 100%;
+  background-color: white;
+  height: 60px;
   border-radius: 8px;
   border-color: rgb(179, 179, 179);
   border-style: solid;
@@ -121,9 +136,12 @@ body img {
     text-align: left;
   }
   #section2 {
-    width: 80%;
+    width: 70%;
   }
   body {
     padding-inline: 10em;
   }
+}
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

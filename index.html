@@ -45,20 +45,56 @@
           <button id="trial">
             Try it free 7 days <span id="jir">then $20/mo. thereafter</span>
           </button>
-          <form>
-            <label for="fist-name"
-              ><input placeholder="First Name" type="text" id="fist-name"
-            /></label>
-            <label for="last-name"
-              ><input placeholder="Last Name" type="text" id="last-name"
-            /></label>
-            <label for="email"
-              ><input placeholder="Email Address" type="email" id="email"
-            /></label>
-            <label for="password"
-              ><input placeholder="Password" type="password" id="password"
-            /></label>
-            <button>CLAIM YOUR FREE TRIAL</button>
+          <form action="" name="sign-up-form" novalidate>
+            <div class="bagus">
+              <label for="first-name"
+                ><input placeholder="First Name" type="text" id="first-name"
+              /></label>
+              <img
+                class="hidden"
+                id="imgfnalert"
+                src="./images/icon-error.svg"
+                alt="error img"
+              />
+              <span id="fnalert"></span>
+            </div>
+            <div class="bagus">
+              <label for="last-name"
+                ><input placeholder="Last Name" type="text" id="last-name"
+              /></label>
+              <img
+                class="hidden"
+                id="imglnalert"
+                src="./images/icon-error.svg"
+                alt="error img"
+              />
+              <span id="lnalert"></span>
+            </div>
+            <div class="bagus">
+              <label for="email"
+                ><input placeholder="Email Address" type="email" id="email"
+              /></label>
+              <img
+                class="hidden"
+                id="imgemailalert"
+                src="./images/icon-error.svg"
+                alt="error img"
+              />
+              <span id="emailalert"></span>
+            </div>
+            <div class="bagus">
+              <label for="password"
+                ><input placeholder="Password" type="password" id="password"
+              /></label>
+              <img
+                class="hidden"
+                id="imgpasswordalert"
+                src="./images/icon-error.svg"
+                alt="error img"
+              />
+              <span id="password-alert"></span>
+            </div>
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
             <p>
               By clicking the button, you are agreeing to our
               <a href="">Terms and Services</a>
@@ -75,5 +111,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
